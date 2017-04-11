@@ -1,71 +1,49 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-    <title>CLNDR Demo</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/clndr.css">
-</head>
-<body>
-    <div class="container">
-        <div class="cal1"></div>
-        <div class="cal2">
-        <script type="text/template" id="template-calendar">
-            <div class="clndr-controls">
-                <div class="clndr-previous-button">&lsaquo;</div>
-                <div class="month"><%= intervalStart.format('M/DD') + ' &mdash; ' + intervalEnd.format('M/DD') %></div>
-                <div class="clndr-next-button">&rsaquo;</div>
-            </div>
-            <div class="clndr-grid">
-                <div class="days-of-the-week">
-                <% _.each(daysOfTheWeek, function(day) { %>
-                    <div class="header-day"><%= day %></div>
-                <% }); %>
-                    <div class="days">
-                    <% _.each(days, function(day) { %>
-                        <div class="<%= day.classes %>"><%= day.day %></div>
-                    <% }); %>
-                    </div>
-                </div>
-            </div>
-            <div class="clndr-today-button">Today</div>
-        </script>
-        </div>
-        <div class="cal3">
-        <script type="text/template" id="template-calendar-months">
-            <div class="clndr-controls top">
-                <div class="clndr-previous-button">&lsaquo;</div>
-                <div class="clndr-next-button">&rsaquo;</div>
-            </div>
-            <div class="clearfix">
-            <% _.each(months, function(cal) { %>
-                <div class="cal">
-                    <div class="clndr-controls">
-                        <div class="month"><%= cal.month.format('MMMM') %></div>
-                    </div>
-                    <div class="clndr-grid">
-                        <div class="days-of-the-week">
-                        <% _.each(daysOfTheWeek, function(day) { %>
-                            <div class="header-day"><%= day %></div>
-                        <% }); %>
-                            <div class="days">
-                            <% _.each(cal.days, function(day) { %>
-                                <div class="<%= day.classes %>"><%= day.day %></div>
-                            <% }); %>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <% }); %>
-            </div>
-            <div class="clndr-today-button">Today</div>
-        </script>
-        </div>
-    </div>
+  <meta charset="UTF-8">
+  <title>tribute</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-    <script src="../src/clndr.js"></script>
-    <script src="demo.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+
+        <div class="thumbnail">
+          <img src="https://www.biography.com/.image/c_fit%2Ccs_srgb%2Cq_80%2Cw_1280/MTIwNjA4NjM0MTM4NjI1NTQ4/image-title2.jpg" class="img-responsive" id="main-pic">
+
+        </div>
+
+        <p>“The most powerful weapon is not violence, but it is talking to people.”</p>
+        <p>
+          “The time for healing of the wounds has come. The moment to bridge the chasm that divides us has come. The time to build is upon us.”
+        </p>
+        <p>
+          "Our march to freedom is irreversible. We must not allow fear to stand in our way."
+        </p>
+        <p>
+          “If there is one lesson we can learn from the struggle against racism, in our country as well as yours, it is that racism must be consciously combatted and not discreetly tolerated.”
+        </p>
+        <p>
+          "When a man is denied the right to live the life he believes in, he has no choice but to become an outlaw."
+        </p>
+        <p>
+          "I learned that courage was not the absence of fear, but the triumph over it...The brave man is not he who does not feel afraid, but he who conquers that fear."</p>
+
+        <p><i>See more art by Ashish Patel on <a href="http://web.stagram.com/n/ilovehash" target="_blank">Instagram</a> and <a href="http://www.etsy.com/shop/ilovehash" target="_blank">Etsy</a>.</i></p>
+    </div>
+  </div>
+</div>
+  
+  
 </body>
 </html>
